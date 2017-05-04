@@ -1,0 +1,54 @@
+
+html { 
+  overflow-x:hidden;
+  overflow-y:hidden; 
+ }
+
+body{
+  
+  font-family: helvetica;
+  font-size: 1.8em;
+  
+}
+
+@media(min-width:750px) {
+
+#banner{
+    text-align: center;
+    color: #fcfcfc;
+    height: 66%;
+    width: 100%;
+    background-image: url(http://spark-bg.com/skin/gym/images/custom-bg.jpg);
+    background-repeat: no-repeat;
+    
+  }
+ }
+
+@media(max-width:767px){
+
+#banner{
+    text-align:center;
+    color: #fcfcfc;
+    height: 50%;
+    width: 100%;
+    background-image: url(http://spark-bg.com/skin/gym/images/custom-bg.jpg);
+    background-repeat: no-repeat;
+  }
+
+ h1{
+  font-size: 2.5em;
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  width: 1em;
+  height: 1em;
+}
+h3{
+  font-size: 1.3em;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  width: 1em;
+  height: 1em;
+  }
+} 
