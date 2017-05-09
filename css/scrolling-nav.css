@@ -15,6 +15,7 @@ html {
     height: 100%;
 }
 
+
 @media(min-width:767px) {
     .navbar {
         padding: 5px 0px;
@@ -65,22 +66,18 @@ div .picture {
     }
 
     .text{
-    height: 80%;
+    height: 100%;
     background: #fff;
     text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
     vertical-align: middle
     }
 }
 
 @media(min-width:762px){
     .text{
-        height: 80%;
+        height: 100%;
         background: #fff;
         text-align: justify;
-        margin-left: 50px;
-        margin-right: 50px;
         vertical-align: middle
         }
 }
