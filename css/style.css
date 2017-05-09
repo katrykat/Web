@@ -17,12 +17,10 @@ body{
 }
 
 #button {
-    height: 10%;
+    height: 100%;
+    width: 100%;
     padding-top: 15px;
-    align-content: center;
-    background: #fff;
-    
-}
+    }
 
 
 @media(min-width:762px) {

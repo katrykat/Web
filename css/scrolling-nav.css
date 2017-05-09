@@ -64,7 +64,7 @@ div .picture {
 
     }
 
-    text{
+    .text{
     height: 80%;
     background: #fff;
     text-align: justify;
@@ -75,12 +75,12 @@ div .picture {
 }
 
 @media(min-width:762px){
-.text{
-    height: 80%;
-    background: #fff;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
-    vertical-align: middle
-    }
+    .text{
+        height: 80%;
+        background: #fff;
+        text-align: justify;
+        margin-left: 50px;
+        margin-right: 50px;
+        vertical-align: middle
+        }
 }
