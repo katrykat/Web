@@ -18,7 +18,6 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 5px 0px;
-        margin-top: 44.3%;
         text-align: center;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -30,32 +29,58 @@ html {
         text-align: center;
 
     }
+
+
+
+div .picture {
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg);
+    width: 100%;
+    height: 100%;
+    padding-top: 0%;
+    }
+
 }
 
 .home-section {
     height: 100%;
     padding-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     background: #fff;
+    
 }
 
-.code-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
-}
 
-.designe-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+
+
+@media(max-width:761px){
+
+div .picture {
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg);
+    width: 100%;
+    height: 50%;
+    padding: 0;
+
+    }
+
+    text{
+    height: 80%;
     background: #fff;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: middle
+    }
 }
 
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+@media(min-width:762px){
+.text{
+    height: 80%;
+    background: #fff;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: middle
+    }
 }
