@@ -3,6 +3,8 @@ html {
   overflow-x:hidden;
   overflow-y:hidden; 
   background: #fff;
+  padding-left: 0;
+  padding-right: 0;
  }
 
 body{
@@ -21,6 +23,7 @@ body{
     width: 100%;
     padding-top: 15px;
     }
+
 
 
 @media(min-width:762px) {
@@ -62,11 +65,11 @@ h3{
 #footer{
     font-size: 10px ;
     text-align:center;
-    color: black;
+    color: gray;
     background-color:  #efefef; 
     height: 3%;
     width: 100%;
-    margin-top: 3%;
+    margin-top: 3.5%;
     }
 }
 
@@ -103,8 +106,26 @@ h3{
 } 
 
 #text1{
-  padding-left: 0%;
-  padding-right: 5%;
   padding-top: 10%;
-  margin-left: 6.2%; 
+  margin-left: 4.2%;
+  margin-right: 2%; 
 }
+
+/*--------------------box----------------------*/
+
+.p-3 {
+    padding: 1rem 1rem !important;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+}
+
+.card-img, .card-title {
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+
+

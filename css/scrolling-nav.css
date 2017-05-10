@@ -7,7 +7,6 @@
 body {
     width: 100%;
     height: 100%;
-
 }
 
 html {
@@ -61,7 +60,7 @@ div .picture {
     background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg);
     width: 100%;
     height: 50%;
-    padding: 0;
+    padding: 0%;
 
     }
 
