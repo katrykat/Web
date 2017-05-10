@@ -51,7 +51,15 @@ div .picture {
     
 }
 
-
+.javascript-section {
+    height: 100%;
+    padding-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background: #fff;
+    
+}
 
 
 @media(max-width:761px){
