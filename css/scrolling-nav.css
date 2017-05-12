@@ -35,16 +35,15 @@ div .picture {
     padding-top: 0%;
     }
 
-}
-
 .home-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
     background: #fff;
     
+    }
 }
 
 .javascript-section {
@@ -55,7 +54,7 @@ div .picture {
     text-align: center;
     background: #fff;
     
-}
+    }
 
 
 @media(max-width:761px){
@@ -65,8 +64,17 @@ div .picture {
     width: 100%;
     height: 50%;
     padding: 0%;
-
    }
+   .home-section {
+    height: 50%;
+    padding-top: 50px;
+    padding-left: 25px;
+    margin-left: 5%;
+    margin-right: 2%;
+    text-align: center;
+    background: #fff;
+    
+    }
 }
 
 @media(min-width:762px){
