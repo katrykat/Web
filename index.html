@@ -3,14 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css" >
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<title>Portfolio</title>
 </head>
-<!--------------------------Related liks menu-------------------------->
 
+<!---Related liks menu-->
 <body class="mx-auto" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
+    <!--Navigation-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
        <div id="center">  
@@ -49,25 +52,25 @@
         <!-- /.container -->
     </nav>
 
-    <!--------------------------------Banner------------------------------>
+    <!---Banner-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-12" id="banner">
-                <h1 class>Kateris Martinez</h1>
-                <h3 class>Portfolio</h3>   
+                <h1>Kateris Martinez</h1>
+                <h3>Portfolio</h3>   
             </div>
         </div>
     </div>  
-<!-------------------------General Info Text-------------------------->
+<!---General Info Text-->
     <!-- Intro Section -->
     <section id="intro" class="home-section">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12">
                               <h2> Welcome to my portfolio</h2>
-                            <p>This page is made with the intention of show you part of my work as a Web Designer learer. 
-                            You will find here information about  me as profiles with part of my job and contact info, You will be able to find some 
-                            examples of my work too,  code and very nice examples of what can you do with basic knowlodges of HTML, CSS and Javascrip
+                            <p>This page is made with the intention of show you part of my work as a Web Designer learner. 
+                            You will find here information about  me, profiles with part of my job and contact info, You will be able to find some 
+                            examples of my work as code and some examples of what can you do with basic knowlodges of HTML, CSS and Javascrip
                             </p>
                     </div>
                  </div>
@@ -78,16 +81,17 @@
     <section id="autor" class="autor-section">
         <div class="container-fluid">
             <div class="row"> 
-                    <div class="clearfix visible-xs-12 col-sm-12 col-lg-6">
+                    <div class="col-xs-12 col-sm-12 col-lg-6">
                         <div class="picture" id="one"> </div>   
                     </div>         
                     <div class="col-xs-12 col-sm-10 col-lg-5" id="text1">
                         <h2>About me</h2>
-                        <p>I started my career as a graphic designer at the school, doing some designs for the taxi companies "Corp taxi" and "Taxi Los cortijos"
+                        <p class="hidden">I started my career as a graphic designer at the school, doing some designs for the taxi companies "Corp taxi" and "Taxi Los cortijos"
                         in my city, after that I started the university obtaining a degree in Marketing and advertising. At the moment I was working as Graphic Designer
                         for a small company where I had the opportunity to do some work for large companies associated with Polar and Cocacola.
-                        <br></br>
-                        I started to focus my career on Web Design 4 years ago when due to a Community Manager course I was doing I did a blog using wordpress,
+                        </p>
+                        <p id="about-text">
+                        I started to focus my career on Web Design in 2013 when due to a Community Manager course I did a blog using wordpress,
                         it was then that I learned part of the process of a web page. I am currently working for a large company where I have to design, update or migrate web pages 
                         for companies like Canon, Starbucks and Microsoft among others.
                         </p>
@@ -97,71 +101,201 @@
      </section>               
                     
     <!-- Code Section -->
-	
-    <section id="code" class="code-section">
-        <div class="container-fluid">
-            <div class="row"> 
-                <div class="card p-3 col-12 col-md-4">
-                    <div class="card-img pb-3">image</div>
-                    <div class="card-title align-center display-5 py-3">EXAMPLE 1</div>
-                    <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                            interdum massa.</p>
+<!--Memory game-->
+<section id="code" class="code-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="card p-3 col-12 col-md-4 col-xs-12" id="memory">
+				<div class="card-img pb-3"><img src="http://ideasqueayudan.com/wp-content/uploads/2016/06/buscando_a_dory-130x130.jpg"></img>
+                    <p class="card-p">Find all the pairs to win!
+                    Play with this memory pad and exercise your brain.
+                    </p> 
                 </div>
-                <div class="card p-3 col-12 col-md-4"> 
-                    <div class="card-img pb-3">image</div>
-                    <div class="card-title align-center display-5 py-3">EXAMPLE 2</div>
-                    <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                            interdum massa.</p>
+				<div class="card-title align-center display-5 py-3">Memory Game</div>
+				<div id="exercise1" class="example-section">
+                       <br/>
+					<button id="myCode" class="btn btn-default">See Code</button>
+					<div class="box"></div>
+				</div>
+			</div>
+				<!-- Modal JS-->
+				<div id="modal-effect" class="modal">
+					<div class="modal-content">
+						<span class="close">
+							<img src="http://www.dailyherald.com/gfx/rwd/close-button-black-x.png">
+							</span>
+							<br/>
+							<p data-height="600"  min-data-height: "100" data-theme-id="dark" data-slug-hash="aWpdLJ" data-default-tab="js,result" data-user="katrykat" data-embed-version="2" data-pen-title="Memory Game" class="codepen">See the Pen											
+											
+								<a href="http://codepen.io/katrykat/pen/aWpdLJ/">Memory Game</a> by Kateris
+											 (<a href="http://codepen.io/katrykat">@katrykat</a>) on 
+								<a href="http://codepen.io">CodePen</a>.
+							</p>
+							<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+				</div>
+        	<!--execise 2-->
+            <div class="card p-3 col-12 col-md-4 col-xs-12" id="clock"> 
+                <div class="card-img pb-3"><img src="http://i.imgur.com/WDiyLqk.png?1"><p class="card-p">Do you want to learn how do a clock with JS? Find the code here!</p></img></div>
+				<div class="card-title align-center display-5 py-3">My firs clock</div>
+				<div id="exercise2" class="example-section">
+                       <br/>
+					<button id="myCode" class="btn btn-default">See Code</button>
+					<div class="box"></div>
+				</div>
+			</div>
+				<!-- Modal JS-->
+				<div id="modal-effect" class="modal">
+					<div class="modal-content">
+						<span class="close">
+							<img src="http://www.dailyherald.com/gfx/rwd/close-button-black-x.png">
+							</span>
+							<br/>
+							<p data-height="600" data-theme-id="dark" data-slug-hash="LRobjV" data-default-tab="js,result" data-user="katrykat" data-embed-version="2" data-pen-title="drawing a clock with JS" class="codepen">See the Pen 
+                                <a href="http://codepen.io/katrykat/pen/LRobjV/">drawing a clock with JS</a> by kateris
+                                 (<a href="http://codepen.io/katrykat">@katrykat</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+				</div>
+     
+            <!--exercise 3-->
+			<div class="card p-3 col-12 col-md-4 col-xs-12" id="loop">
+				<div class="card-img pb-3">
+                    <img src="http://i.imgur.com/PkAmcbG.png?1">
+                        <p class="card-p">Is an infinite loop, learn how do something that never ends!
+                        </p>
+                    </img>
                 </div>
-                <div class="card p-3 col-12 col-md-4">
-                    <div class="card-img pb-3">image</div>
-                    <div class="card-title align-center display-5 py-3">EXAMPLE 3</div>
-                    <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                            interdum massa.</p>            
+				<div class="card-title align-center display-5 py-3">Running Forever</div>
+				<div id="exercise1" class="example-section">
+                    <br/>
+					<button id="myCode" class="btn btn-default">See Code</button>
+					<div class="box"></div>
+				</div>
+			</div>
+				<!-- Modal JS-->
+				<div id="modal-effect" class="modal">
+					<div class="modal-content">
+						<span class="close">
+							<img src="http://www.dailyherald.com/gfx/rwd/close-button-black-x.png">
+							</span>
+							<br/>
+							<p data-height="600" data-theme-id="dark" data-slug-hash="LbxZVo" data-default-tab="result" data-user="katrykat" data-embed-version="2" data-pen-title="LbxZVo" data-preview="true" class="codepen">See the Pen 
+                                <a href="https://codepen.io/katrykat/pen/LbxZVo/">LbxZVo</a> by kateris 
+                                (<a href="http://codepen.io/katrykat">@katrykat</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
+				</div>
+            <!--exercise 4-->    
+                <div class="card p-3 col-12 col-md-4 col-xs-12" id="memory"> 
+                    <div class="card-img pb-3"><img src="http://i.imgur.com/PkAmcbG.png?1"><p class="card-p">Find all the pairs and win!
+                Play with this memory pad and exercise your brain.</p></img></div>
+				<div class="card-title align-center display-5 py-3">Memory Game</div>
+				<div id="exercise1" class="example-section">
+                       <br/>
+					<button id="myCode" class="btn btn-default">See Code</button>
+					<div class="box"></div>
+				</div>
+			</div>
+				<!-- Modal JS-->
+				<div id="modal-effect" class="modal">
+					<div class="modal-content">
+						<span class="close">
+							<img src="http://www.dailyherald.com/gfx/rwd/close-button-black-x.png">
+							</span>
+							<br/>
+							<p data-height="600" data-theme-id="dark" data-slug-hash="aWpdLJ" data-default-tab="js,result" data-user="katrykat" data-embed-version="2" data-pen-title="Memory Game" class="codepen">See the Pen											
+											
+								<a href="http://codepen.io/katrykat/pen/aWpdLJ/">Memory Game</a> by Kateris
+											 (
+								<a href="http://codepen.io/katrykat">@katrykat</a>) on 
+								<a href="http://codepen.io">CodePen</a>.
+							</p>
+							<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
                 </div>
-                <div class="card p-3 col-12 col-md-4">
-                    <div class="card-img pb-3">image</div>    
-                    <div class="card-title align-center display-5 py-3">EXAMPLE 4</div>
-                    <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                            interdum massa.</p>
+            <!--exercise 5-->    
+                <div class="card p-3 col-12 col-md-4 col-xs-12" id="memory"> 
+                    <div class="card-img pb-3"><img src="http://i.imgur.com/PkAmcbG.png?1"><p class="card-p">Find all the pairs and win!
+                Play with this memory pad and exercise your brain.</p></img></div>
+				<div class="card-title align-center display-5 py-3">Memory Game</div>
+				<div id="exercise1" class="example-section">
+                       <br/>
+					<button id="myCode" class="btn btn-default">See Code</button>
+					<div class="box"></div>
+				</div>
+			</div>
+				<!-- Modal JS-->
+				<div id="modal-effect" class="modal">
+					<div class="modal-content">
+						<span class="close">
+							<img src="http://www.dailyherald.com/gfx/rwd/close-button-black-x.png">
+							</span>
+							<br/>
+							<p data-height="600" data-theme-id="dark" data-slug-hash="aWpdLJ" data-default-tab="js,result" data-user="katrykat" data-embed-version="2" data-pen-title="Memory Game" class="codepen">See the Pen											
+											
+								<a href="http://codepen.io/katrykat/pen/aWpdLJ/">Memory Game</a> by Kateris
+											 (
+								<a href="http://codepen.io/katrykat">@katrykat</a>) on 
+								<a href="http://codepen.io">CodePen</a>.
+							</p>
+							<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
                 </div>
-                <div class="card p-3 col-12 col-md-4"> 
-                    <div class="card-img pb-3">image</div>
-                    <div class="card-title align-center display-5 py-3">EXAMPLE 5</div>
-                    <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                            interdum massa.</p>
+            <!--exercise 6-->    
+                <div class="card p-3 col-12 col-md-4 col-xs-12" id="memory"> 
+                    <div class="card-img pb-3"><img src="http://i.imgur.com/PkAmcbG.png?1"><p class="card-p">Find all the pairs and win!
+                Play with this memory pad and exercise your brain.</p></img></div>
+				<div class="card-title align-center display-5 py-3">Memory Game</div>
+				<div id="exercise1" class="example-section">
+                       <br/>
+					<button id="myCode" class="btn btn-default">See Code</button>
+					<div class="box"></div>
+				</div>
+			</div>
+				<!-- Modal JS-->
+				<div id="modal-effect" class="modal">
+					<div class="modal-content">
+						<span class="close">
+							<img src="http://www.dailyherald.com/gfx/rwd/close-button-black-x.png">
+							</span>
+							<br/>
+							<p data-height="600"  data-theme-id="dark" data-slug-hash="aWpdLJ" data-default-tab="js,result" data-user="katrykat" data-embed-version="2" data-pen-title="Memory Game" class="codepen">See the Pen											
+											
+								<a href="http://codepen.io/katrykat/pen/aWpdLJ/">Memory Game</a> by Kateris
+											 (
+								<a href="http://codepen.io/katrykat">@katrykat</a>) on 
+								<a href="http://codepen.io">CodePen</a>.
+							</p>
+							<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+					</div>
                 </div>
-                <div class="card p-3 col-12 col-md-4">
-                    <div class="card-img pb-3">image</div>
-                    <div class="card-title align-center display-5 py-3">EXAMPLE 6</div>
-                    <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                            interdum massa.</p>
-               </div>
-            </div>  
-        </div>  
-</section>
-	
+</section>	
       <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+ <section id="contact" class="contact-section">
         <div class="container-fluid">
-                <div class="row">          
-                        <div class="col-xs-12 col-sm-12 col-lg-5" id="text2">
-                                <h2>Contact</h2>
-                                <p>Mauris ut nibh risus. Aliquam volutpat ultrices augue at placerat. Suspendisse id lacus sit amet magna semper sodales non
-                                    interdum massa. Ut pretium aliquam leo, a faucibus ligula venenatis ut. Aliquam tincidunt ipsum in tortor maximus, sit amet
-                                    sagittis nunc convallis. Suspendisse potenti. Nullam sollicitudin mollis viverra. Suspendisse erat lectus, malesuada in nisl
-                                    vitae, dictum vulputate elit. Suspendisse finibus quam ac ante lobortis facilisis. Nullam vel arcu metus. Praesent id
-                                    consectetur metus.
-                                </p>
-                         </div>   
-                        <div class="col-md-6 col-lg-6 col-sm-9">
-                            <div class="picture" id="two"></div>   
-                        </div>      
-                </div>    
-        </div>       
-    </section>
+            <div class="row">          
+                <div class="col-xs-12 col-sm-12 col-lg-5" id="text2">
+                                <h2 id="contact-T">Contact</h2>
+                                <p>If there is something where I can help you please feel free to contat with me on by following links.</p>
+                                <p class="hidden">Thanks!</p>
 
-<!-----------------------------scroll up-------------------------------->  
+                                 <ul class="list">
+                                        <li class="col-xs-2 col-sm-2 col-lg-2" id="git"><a href="https://github.com/katrykat"></a></li>
+                                        <li class="col-xs-2 col-sm-2 col-lg-2" id="linkedin"><a href="https://ie.linkedin.com/in/katrykat/en"></a></li>
+                                        <li class="col-xs-2 col-sm-2 col-lg-2" id="behance"><a href="https://www.behance.net/katerismar07b5"></a></li>
+                                        <li class="col-xs-2 col-sm-2 col-lg-2" id="wordpress"><a href="https://katerismartinez.wordpress.com/"></a></li>
+                                        <li class="col-xs-2 col-sm-2 col-lg-2" id="twitter"><a href="https://twitter.com/katrykaty"></a></li>
+                                 </ul>       
+                </div>   
+                                <div class="col-md-6 col-lg-6 col-sm-9">
+                                    <div class="picture" id="two"></div>   
+                                </div>      
+            </div>    
+        </div>       
+</section>
+
+<!---scroll up-->  
 
 
     <section class="button">
@@ -174,25 +308,35 @@
         </div>
     </section>
 
-<!--------------------------------footer------------------------------>  
+<!--footer-->  
 
   <div class="col-xs-12 col-sm-12" id="footer">
 			<div class="hidden-xs">
-		  		<p id="cr"> Design by <a href="https://www.linkedin.com/in/katrykat/?locale=en_US">Kateris Martinez </a>- Copyright 2017.- All Rights Reserved.</p>
+		  		<p id="cr"> Design by <a href="https://www.linkedin.com/in/katrykat/?locale=en_US">Kateris Martinez </a>- Copyright <span id="current-year"></span>.- All Rights Reserved.</p>
 		  	</div>	
-	  </div>  
+  </div>  
 
 
-</div>
+    <script>
+		var today = new Date();
+		var now = today.getFullYear();
+	    document.getElementById('current-year').innerHTML = now;
+	</script>
 
- 	<script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/modal.js" ></script>
     
         <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 
-  
+    <!-- jQuery CDN JS minified (must) -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- ZooMove JS minified -->
+    <script src="dist/zoomove.min.js"></script>
+    
   
 </body>
 </html>
