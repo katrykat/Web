@@ -75,14 +75,16 @@ body{
 
     .code-section{
         width: 100%;
-        height: 100%;       
+        height: 100%;   
+        height: 100%;
+        padding-top: 0%;
+        text-align: center;    
         }  
     .p-3{
         padding: 1.3rem 6rem !important;
         padding-right: 1rem;
         margin-bottom: -6rem;
         padding-left: 1rem;
-        background-color: #fcfcfc;
         }
 
     .card-img, .card-title {
@@ -108,12 +110,6 @@ body{
         height: 100%;
         padding-top: 0%;
         text-align: justify;
-        }  
-
-    .code-section {
-        height: 100%;
-        padding-top: 0%;
-        text-align: center;
         }   
     div .picture {
         width: 100%;
@@ -209,11 +205,9 @@ body{
     .p-3{      
         padding-top:5% ;
         padding-right: 0rem;
-        margin-bottom: -60px;
-        background-color:  #fcfcfc;
         }
 
-    .card-img{
+    .card-img,.card-title{
         text-align: center;
         margin-top: 3px; 
         color: #000000;
@@ -229,9 +223,15 @@ body{
         }  
 
     .card-title{
-        font-size: 18px;
-        margin-top: 13%;
-        text-align: center;
+        /*font-size: 18px;
+        margin-top: 13px;
+        text-align: center;*/
+        margin-left: 20px;
+        margin-right: 45px; 
+        margin-top: 23px;
+        margin-bottom: 5%;
+        font-size: 14px;
+        text-align: justify;
         }  
 
     #myCode{
@@ -313,7 +313,8 @@ body{
         height: 5%;
          }
        #two{
-        background-image: url(http://i.imgur.com/IzAtTpM.png?1);   
+        background-image: url(http://i.imgur.com/IzAtTpM.png?1);
+        background-image: no-repeat;   
        }
 
 
@@ -327,4 +328,8 @@ body{
         width: 100%;
         padding-top: 18px;
         text-align: center;
+        }
+
+        #clock a"{
+
         }
