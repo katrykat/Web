@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="css/reset.css" >
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/progressively/dist/progressively.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://unpkg.com/progressively/dist/progressively.min.js"></script>
 
 	<title>Portfolio</title>
 </head>
@@ -27,7 +30,6 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Home</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->  
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
@@ -51,13 +53,14 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!---Banner-->
-    <div class="container-fluid">
+<div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-12" id="banner">
-                <h1>Kateris Martinez</h1>
-                <h3>Portfolio</h3>   
+                <figure class="progressive">
+                     <img class="progressive__img progressive--not-loaded" data-progressive="img/8XfEhp3.png" src="img/8XfEhp3.png">
+                </figure>
+                <h1>Kateris Martinez</h1>  
             </div>
         </div>
     </div>  
@@ -70,8 +73,9 @@
                               <h2> Welcome to my portfolio</h2>
                             <p>This page is made with the intention of show you part of my work as a Web Designer learner. 
                             You will find here information about  me, profiles with part of my job and contact info, You will be able to find some 
-                            examples of my work as code and some examples of what can you do with basic knowlodges of HTML, CSS and Javascrip
-                            </p>
+                            examples of my work as code and some examples of what can you do with basic knowlodges of HTML, CSS and Javascript
+                            <br/>
+                            This page was made using HTML5, JavaScript, CCS3 and Bootstrap.</p>
                     </div>
                  </div>
              </div>
@@ -82,11 +86,15 @@
         <div class="container-fluid">
             <div class="row"> 
                     <div class="col-xs-12 col-sm-12 col-lg-6">
-                        <div class="picture" id="one"> </div>   
-                    </div>         
+                        <div class="picture" id="one">                 
+                            <figure class="progressive">
+                                <img class="progressive__img progressive--not-loaded" data-progressive="img/about2.png" src="img/about1.png">
+                            </figure>                             
+                        </div>   
+                    </div>                                          
                     <div class="col-xs-12 col-sm-10 col-lg-5" id="text1">
                         <h2>About me</h2>
-                        <p class="hidden">I started my career as a graphic designer at the school, doing some designs for the taxi companies "Corp taxi" and "Taxi Los cortijos"
+                        <p>I started my career as a graphic designer at the school, doing some designs for the taxi companies "Corp taxi" and "Taxi Los cortijos"
                         in my city, after that I started the university obtaining a degree in Marketing and advertising. At the moment I was working as Graphic Designer
                         for a small company where I had the opportunity to do some work for large companies associated with Polar and Cocacola.
                         </p>
@@ -96,10 +104,9 @@
                         for companies like Canon, Starbucks and Microsoft among others.
                         </p>
                     </div>  
-             </div>
+               </div>
          </div>  
-     </section>               
-                    
+     </section>                    
     <!-- Code Section -->
 <!--Memory game-->
 <section id="code" class="code-section">
@@ -298,8 +305,13 @@
                                     </div>
 
                                 <div class="col-md-6 col-lg-6 col-sm-9">
-                                    <div class="picture" id="two"></div>   
-                                </div>      
+                                    <div class="picture" id="two">                                            
+                                         <figure class="progressive">
+                                            <img class="progressive__img progressive--not-loaded" data-progressive="img/contact3.png" src="img/contact3.png">
+                                         </figure>                             
+                                    </div>   
+                                </div> 
+                 
             </div>    
         </div>       
 </section>
@@ -332,6 +344,8 @@
 	    document.getElementById('current-year').innerHTML = now;
 	</script>
 
+    
+
     <script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/modal.js" ></script>
@@ -343,9 +357,19 @@
     <!-- jQuery CDN JS minified (must) -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <!-- ZooMove JS minified -->
-    <script src="dist/zoomove.min.js"></script>
-    
+<!--proogressively-->
+    <script>
+        progressively.init({
+        delay: 100,
+        throttle: 1000,
+        imgload: function(elem) {
+            console.log(elem);
+        },
+        afterload: function() {
+            console.log('All images have finished loading!');
+        }
+        });
+    </script>
   
 </body>
 </html>
