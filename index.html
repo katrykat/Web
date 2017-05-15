@@ -72,9 +72,19 @@
                         <p>This page is made with the intention of show you part of my work as a Web Designer learner. You will
                             find here information about me, profiles with part of my job and contact info, You will be able
                             to find some examples of my work as code and some examples of what can you do with basic knowlodges
-                            of HTML, CSS and Javascript
-                            <br/> This page was made using HTML5, JavaScript, CCS3 and Bootstrap.</p>
-                    </div>
+                            of HTML, CSS and Javascript. This page was made using HTML5, JavaScript, CCS3 and Bootstrap.
+                            <br/>
+                            <br/>
+                            Here you will find some effects and tools used such as:</p>
+                            <div id="intro-li"> 
+                                    <li><a desc = "Which is responsive with the mobile version too."><b>Scroll Menu</b></a></li>
+                                    <li><a desc = "Which function is load the images on progressive way starting with a blur effect."><b>Progressive image</b></a></li>
+                                    <li><a desc = "That show you my preview and code for Codepen account."><b>Inframe presentation</b></a></li>                      
+                            </div>
+                         <p>    
+                            Among more. Let's see how many you can notice.
+                        </p>    
+                    </div>  
                 </div>
             </div>
         </section>
@@ -328,21 +338,22 @@
             </div>
         </div>
 
-        <!-- Vendor -->
+        <!--Script section-->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
         <script src="https://unpkg.com/progressively/dist/progressively.min.js"></script>
+      
+        <!--Marginotes-->
+        <script>$("selector").marginotes(options)</script>
+
+        <!--Footer year-->
         <script>
             var today = new Date();
             var now = today.getFullYear();
             document.getElementById('current-year').innerHTML = now;
         </script>
-
-        <script src="js/modal.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-
         <!--proogressively-->
         <script>
             progressively.init({
@@ -356,7 +367,12 @@
                 }
             });
         </script>
-
+        <!--Marginotes-->
+        <script src="js/marginotes.js"></script>
+        <!--Modal-->
+        <script src="js/modal.js"></script>
+        <!--Scrolling-->
+        <script src="js/scrolling-nav.js"></script>
     </body>
 
     </html>
