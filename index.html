@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/progressively/dist/progressively.min.css">
+        <script src="js/jquery.isotope.js" type="text/javascript"></script>
         <title>Kateris Martinez</title>
     </head>
 
@@ -117,23 +118,35 @@
                 </div>
             </div>
         </section>
-        <!-- Code Section -->
 
-        <section id="code" class="code-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="card p-3 col-12 col-md-4 col-xs-12" id="exercise">
-                        <div class="card-img pb-3"><img src="img/buscaminas.png" />
-                            <p class="card-p">Try to tick all the boxes to win.
-                            </p>
+        <!--Isotope menu-->
+       
+    <section id="code" class="code-section">
+        <div class="container-fluid">
+             <div class="row"> 				
+                <div class="assetsFilter">				 
+				    <a href="#code" data-filter="*" class="current">All Categories</a>
+				    <a href="#code" data-filter=".time">Time</a>
+				    <a href="#code" data-filter=".game">Games</a>
+				    <a href="#code" data-filter=".loop">loop</a>				 
+				</div>
+
+        <!-- Code Section -->
+                <ul class="card-showcase portfolioContainer"> 
+                    <li class="game">
+                        <div class="card p-3 col-12 col-md-4 col-xs-12" id="exercise">
+                            <div class="card-img pb-3"><img src="img/buscaminas.png" />
+                                <!--<p class="card-p">Try to tick all the boxes to win.
+                                </p>-->
+                            </div>
+                            <div class="card-title align-center display-5 py-3">TicBox</div>
+                            <div class="example-section">
+                                <br/>
+                                <button class="btn btn-default btn-open-modal" data-modal="modal-memory2">See Code</button>
+                                <div class="box"></div>
+                            </div>
                         </div>
-                        <div class="card-title align-center display-5 py-3">Memory Game</div>
-                        <div class="example-section">
-                            <br/>
-                            <button class="btn btn-default btn-open-modal" data-modal="modal-memory2">See Code</button>
-                            <div class="box"></div>
-                        </div>
-                    </div>
+                    </li>   
                     <!-- Modal JS-->
                     <div id="modal-memory2" class="modal">
                         <div class="modal-content">
@@ -149,18 +162,20 @@
                         </div>
                     </div>
                     <!--My first clock-->
-                    <div class="card p-3 col-12 col-md-4 col-xs-12" id="clock">
-                        <div class="card-img pb-3"><img src="http://i.imgur.com/WDiyLqk.png?1">
-                            <p class="card-p">Do you want to learn how do a clock with JS? Find the code here!</p>
-                            </img>
+                    <li class="time">
+                        <div class="card p-3 col-12 col-md-4 col-xs-12" id="clock">
+                            <div class="card-img pb-3"><img src="http://i.imgur.com/WDiyLqk.png?1">
+                                <!--<p class="card-p">Do you want to learn how do a clock with JS? Find the code here!</p>-->
+                                </img>
+                            </div>
+                            <div class="card-title align-center display-5 py-3">Clock</div>
+                            <div class="example-section">
+                                <br/>
+                                <button class="btn btn-default btn-open-modal" data-modal="modal-clock">See Code</button>
+                                <div class="box"></div>
+                            </div>
                         </div>
-                        <div class="card-title align-center display-5 py-3">My firs clock</div>
-                        <div class="example-section">
-                            <br/>
-                            <button class="btn btn-default btn-open-modal" data-modal="modal-clock">See Code</button>
-                            <div class="box"></div>
-                        </div>
-                    </div>
+                     </li>   
                     <!-- Modal JS-->
                     <div id="modal-clock" class="modal">
                         <div class="modal-content">
@@ -177,20 +192,22 @@
                     </div>
 
                     <!--Loop-->
-                    <div class="card p-3 col-12 col-md-4 col-xs-12" id="loop">
-                        <div class="card-img pb-3">
-                            <img src="http://i.imgur.com/PkAmcbG.png?1">
-                            <p class="card-p">Is an infinite loop, learn how do something that never ends!
-                            </p>
-                            </img>
+                    <li class="loop"> 
+                        <div class="card p-3 col-12 col-md-4 col-xs-12" id="loop">
+                            <div class="card-img pb-3">
+                                <img src="http://i.imgur.com/PkAmcbG.png?1">
+                                <!--<p class="card-p">Is an infinite loop, learn how do something that never ends!
+                                </p>-->
+                                </img>
+                            </div>
+                            <div class="card-title align-center display-5 py-3">Loop</div>
+                            <div class="example-section">
+                                <br/>
+                                <button class="btn btn-default btn-open-modal" data-modal="modal-running">See Code</button>
+                                <div class="box"></div>
+                            </div>
                         </div>
-                        <div class="card-title align-center display-5 py-3">Running Forever</div>
-                        <div class="example-section">
-                            <br/>
-                            <button class="btn btn-default btn-open-modal" data-modal="modal-running">See Code</button>
-                            <div class="box"></div>
-                        </div>
-                    </div>
+                     </li>   
                     <!-- Modal JS-->
                     <div id="modal-running" class="modal">
                         <div class="modal-content">
@@ -204,19 +221,22 @@
                             </iframe>
                         </div>
                     </div>
+
                     <!--Hangman-->
-                    <div class="card p-3 col-12 col-md-4 col-xs-12" id="Hman">
-                        <div class="card-img pb-3"><img src="img/hangman.png">
-                            <p class="card-p">Let's do a simple but effective hangman's game</p>
-                            </img>
+                    <li class="game"> 
+                        <div class="card p-3 col-12 col-md-4 col-xs-12" id="Hman">
+                            <div class="card-img pb-3"><img src="img/hangman.png">
+                                <!--<p class="card-p">Let's do a simple but effective hangman's game</p>-->
+                                </img>
+                            </div>
+                            <div class="card-title align-center display-5 py-3">Hangman</div>
+                            <div class="example-section">
+                                <br/>
+                                <button class="btn btn-default btn-open-modal" data-modal="modal-hangman">See Code</button>
+                                <div class="box"></div>
+                            </div>
                         </div>
-                        <div class="card-title align-center display-5 py-3">Hangman</div>
-                        <div class="example-section">
-                            <br/>
-                            <button class="btn btn-default btn-open-modal" data-modal="modal-hangman">See Code</button>
-                            <div class="box"></div>
-                        </div>
-                    </div>
+                    </li>   
                     <!-- Modal JS-->
                     <div id="modal-hangman" class="modal">
                         <div class="modal-content">
@@ -230,19 +250,22 @@
                             </iframe>
                         </div>
                     </div>
-                    <!--exercise 5-->
-                    <div class="card p-3 col-12 col-md-4 col-xs-12" id="snake">
-                        <div class="card-img pb-3"><img src="img/snake.png">
-                            <p class="card-p">Practice your skills on JS  with this nice and classic game.</p>
-                            </img>
+
+                    <!--Snake-->
+                   <li class="game"> 
+                        <div class="card p-3 col-12 col-md-4 col-xs-12" id="snake">
+                            <div class="card-img pb-3"><img src="img/snake.png">
+                                <!--<p class="card-p">Practice your skills on JS  with this nice and classic game.</p>-->
+                                </img>
+                            </div>
+                            <div class="card-title align-center display-5 py-3">Snake</div>
+                            <div class="example-section">
+                                <br/>
+                                <button class="btn btn-default btn-open-modal" data-modal="modal-snake">See Code</button>
+                                <div class="box"></div>
+                            </div>
                         </div>
-                        <div class="card-title align-center display-5 py-3">Snake</div>
-                        <div class="example-section">
-                            <br/>
-                            <button class="btn btn-default btn-open-modal" data-modal="modal-snake">See Code</button>
-                            <div class="box"></div>
-                        </div>
-                    </div>
+                    </li>    
                     <!-- Modal JS-->
                     <div id="modal-snake" class="modal">
                         <div class="modal-content">
@@ -256,18 +279,20 @@
                             </iframe>
                         </div>
                     </div>
-                    <!--exercise 6-->
-                    <div class="card p-3 col-12 col-md-4 col-xs-12" id="memory">
-                        <div class="card-img pb-3"><img src="http://ideasqueayudan.com/wp-content/uploads/2016/06/buscando_a_dory-130x130.jpg"/>
-                            <p class="card-p">Find all the pairs and win! Play with this memory pad and exercise your brain.</p>
+                    <!--memory-->
+                    <li class="game">  
+                        <div class="card p-3 col-12 col-md-4 col-xs-12" id="memory">
+                            <div class="card-img pb-3"><img src="http://ideasqueayudan.com/wp-content/uploads/2016/06/buscando_a_dory-130x130.jpg"/>
+                                <!--<p class="card-p">Find all the pairs and win! Play with this memory pad and exercise your brain.</p>-->
+                            </div>
+                            <div class="card-title align-center display-5 py-3">Memory</div>
+                            <div class="example-section">
+                                <br/>
+                                <button class="btn btn-default btn-open-modal" data-modal="modal-memmory">See Code</button>
+                                <div class="box"></div>
+                            </div>
                         </div>
-                        <div class="card-title align-center display-5 py-3">Memory Game</div>
-                        <div class="example-section">
-                            <br/>
-                            <button class="btn btn-default btn-open-modal" data-modal="modal-memmory">See Code</button>
-                            <div class="box"></div>
-                        </div>
-                    </div>
+                     </li>   
                     <!-- Modal JS-->
                     <div id="modal-memmory" class="modal">
                         <div class="modal-content">
@@ -279,8 +304,12 @@
                                 frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/katrykat/pen/J/'>Memory Game</a> by kateris (<a href='http://codepen.io/katrykat'>@katrykat</a>)
                                 on <a href='http://codepen.io'>CodePen</a>.</iframe>
                         </div>
-                    </div>
-        </section>
+                    </div>    
+                </ul>    
+            </div>
+        </div>         
+    </section>
+    
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container-fluid">
